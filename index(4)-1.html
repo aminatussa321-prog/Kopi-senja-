@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2b1b14">
+<title>Kopi Senja | Kedai Kopi</title>
+<style>
+:root{--bg:#ead7bf;--brown:#f5e8d8;--cream:#4b3022;--muted:#806957;--gold:#b9824f;--dark:#4b3022}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--cream);line-height:1.6}
+header{position:sticky;top:0;z-index:5;background:rgba(245,232,216,.96);backdrop-filter:blur(10px);border-bottom:1px solid #d0b393}
+nav{max-width:1100px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:1.45rem;font-weight:bold;letter-spacing:1px;color:var(--gold)}.logo span{color:var(--cream)}
+nav ul{display:flex;gap:25px;list-style:none}nav a{color:var(--cream);text-decoration:none;font: bold .9rem Arial}nav a:hover{color:var(--gold)}
+.hero{min-height:570px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;max-width:1100px;margin:auto;padding:65px 22px}
+.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font: bold .75rem Arial}
+h1{font-size:clamp(2.8rem,6vw,5rem);line-height:1.05;margin:18px 0}h1 em{color:var(--gold);font-weight:normal}
+.hero p{color:var(--muted);max-width:470px;margin-bottom:28px}
+.btn{display:inline-block;background:var(--gold);color:var(--dark);padding:13px 22px;border-radius:30px;text-decoration:none;font:bold .9rem Arial;border:0;cursor:pointer}
+.btn:hover{background:#edc18b;transform:translateY(-2px)}
+.hero-img{height:430px;border-radius:48% 48% 18px 18px;overflow:hidden;border:5px solid #c49a72;box-shadow:0 20px 50px #8a654733}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+section{padding:75px 22px}.section-inner{max-width:1100px;margin:auto}
+.section-head{text-align:center;margin-bottom:38px}.section-head h2{font-size:2.5rem;margin:8px 0}.section-head p{color:var(--muted)}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--brown);border:1px solid #dfc7aa;border-radius:16px;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px #8a654733}
+.card img{width:100%;height:205px;object-fit:cover;display:block}.card-body{padding:19px}
+.card h3{font-size:1.25rem}.desc{font: .88rem Arial;color:var(--muted);margin:7px 0 15px;min-height:38px}
+.price-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.price{color:var(--gold);font-weight:bold;font-size:1.1rem}
+.add{background:#d6a66b;border:0;border-radius:20px;padding:9px 14px;color:#24150e;font-weight:bold;cursor:pointer}
+.about{background:#dfc4a5}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about img{width:100%;height:330px;object-fit:cover;border-radius:18px}.about h2{font-size:2.4rem;margin:10px 0 15px}.about p{color:var(--muted);margin-bottom:15px}
+.order{background:linear-gradient(135deg,#f1dfc8,#dfc2a0);text-align:center}.order h2{font-size:2.4rem;margin:10px}.order p{color:var(--muted);margin-bottom:22px}
+.cart{position:fixed;right:18px;bottom:18px;background:var(--gold);color:#21140e;padding:13px 18px;border-radius:30px;font:bold .9rem Arial;box-shadow:0 5px 20px #0008;z-index:8}
+footer{text-align:center;padding:25px;color:var(--muted);font: .85rem Arial;border-top:1px solid #d0b393}
+@media(max-width:760px){nav ul{gap:12px}nav a{font-size:.75rem}.hero{grid-template-columns:1fr;padding-top:45px}.hero-img{height:300px;order:-1}.menu-grid{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr}.about img{height:250px}}
+@media(max-width:480px){.logo{font-size:1.1rem}nav{padding:13px}.menu-grid{grid-template-columns:1fr}.card img{height:220px}section{padding:55px 18px}}
+</style>
+</head>
+<body>
+<header><nav>
+  <div class="logo">KOPI <span>SENJA.</span></div>
+  <ul><li><a href="#beranda">Beranda</a></li><li><a href="#menu">Menu</a></li><li><a href="#tentang">Tentang</a></li></ul>
+</nav></header>
+
+<main>
+<section class="hero" id="beranda">
+  <div>
+    <div class="eyebrow">Tempat cerita dimulai</div>
+    <h1>Secangkir kopi,<br><em>sejuta cerita.</em></h1>
+    <p>Nikmati aroma kopi pilihan dengan suasana hangat dan nyaman. Temukan rasa favoritmu di Kopi Senja.</p>
+    <a class="btn" href="#menu">Jelajahi Menu</a>
+  </div>
+  <div class="hero-img"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=85" alt="Suasana kedai kopi"></div>
+</section>
+
+<section id="menu">
+ <div class="section-inner">
+  <div class="section-head"><div class="eyebrow">Pilihan favorit</div><h2>Menu Kami</h2><p>Dibuat dengan bahan pilihan, disajikan sepenuh hati.</p></div>
+  <div class="menu-grid">
+   <article class="card"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" alt="Espresso"><div class="card-body"><h3>Espresso</h3><p class="desc">Kopi pekat dengan aroma yang kuat.</p><div class="price-row"><span class="price">Rp18.000</span><button class="add" data-name="Espresso" data-price="18000">Tambah +</button></div></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="Caffe latte"><div class="card-body"><h3>Caffe Latte</h3><p class="desc">Perpaduan espresso dan susu lembut.</p><div class="price-row"><span class="price">Rp25.000</span><button class="add" data-name="Caffe Latte" data-price="25000">Tambah +</button></div></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" alt="Cappuccino"><div class="card-body"><h3>Cappuccino</h3><p class="desc">Kopi nikmat dengan foam susu creamy.</p><div class="price-row"><span class="price">Rp23.000</span><button class="add" data-name="Cappuccino" data-price="23000">Tambah +</button></div></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=700&q=80" alt="Kopi gula aren"><div class="card-body"><h3>Kopi Gula Aren</h3><p class="desc">Rasa manis gula aren dan kopi yang seimbang.</p><div class="price-row"><span class="price">Rp22.000</span><button class="add" data-name="Kopi Gula Aren" data-price="22000">Tambah +</button></div></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo- iced" alt="Matcha latte" onerror="this.src='https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=700&q=80'"><div class="card-body"><h3>Matcha Latte</h3><p class="desc">Teh hijau lembut dengan susu segar.</p><div class="price-row"><span class="price">Rp24.000</span><button class="add" data-name="Matcha Latte" data-price="24000">Tambah +</button></div></div></article>
+   <article class="card"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80" alt="Chocolate"><div class="card-body"><h3>Ice Chocolate</h3><p class="desc">Cokelat dingin yang kaya dan nikmat.</p><div class="price-row"><span class="price">Rp21.000</span><button class="add" data-name="Ice Chocolate" data-price="21000">Tambah +</button></div></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="about" id="tentang"><div class="section-inner about-grid">
+ <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=85" alt="Barista membuat kopi">
+ <div><div class="eyebrow">Cerita kami</div><h2>Lebih dari sekadar kopi.</h2><p>Kopi Senja hadir sebagai tempat untuk beristirahat sejenak dari kesibukan. Kami percaya, kopi yang baik bisa menemani obrolan sederhana menjadi kenangan istimewa.</p><p>Datang, duduk santai, dan nikmati setiap tegukan.</p></div>
+</div></section>
+<section class="order"><div class="section-inner"><div class="eyebrow">Sampai jumpa di kedai</div><h2>Waktunya ngopi!</h2><p>Pilih menu favoritmu dan nikmati hari dengan lebih hangat.</p><a class="btn" href="#menu">Lihat Menu</a></div></section>
+</main>
+<div class="cart" id="cart">Keranjang: 0 item · Rp0</div>
+<footer>© 2026 Kopi Senja. Dibuat dengan ☕ dan sepenuh hati.</footer>
+<script>
+let count=0,total=0;
+const rupiah=n=>'Rp'+n.toLocaleString('id-ID');
+document.querySelectorAll('.add').forEach(btn=>btn.addEventListener('click',()=>{
+ count++;total+=Number(btn.dataset.price);
+ document.getElementById('cart').textContent=`Keranjang: ${count} item · ${rupiah(total)}`;
+ btn.textContent='Ditambahkan ✓';setTimeout(()=>btn.textContent='Tambah +',900);
+}));
+document.getElementById('cart').addEventListener('click',()=>alert(`Pesanan kamu: ${count} item\nTotal: ${rupiah(total)}\nSilakan hubungi kedai untuk konfirmasi pesanan.`));
+</script>
+</body>
+</html>
